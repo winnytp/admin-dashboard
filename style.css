@@ -6,7 +6,7 @@ body {
     background-color: #f9faf5;
 }
 
-h1, body {
+h1, h2, body {
     margin: 0;
 }
 
@@ -153,11 +153,53 @@ h1 {
     padding: 1.35rem 2rem;
 }
 
+.sidebar-bottom {
+    margin-top: auto;
+}
+
 .dashboard {
     grid-area: dashboard;
     padding: 1rem 2rem;
 }
 
-.sidebar-bottom {
-    margin-top: auto;
+.overview-title > h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.overview-board-selector ul {
+    list-style-type: none;
+    margin-top: 1rem;
+    padding: 0;
+    padding-bottom: 0.2rem;
+    display: flex;
+    gap: 1.25rem;
+    font-size: 1.05rem; 
+    color: rgba(0, 0, 0, 0.35);
+    /* border-bottom: 3px solid rgba(0, 0, 0, 0.4); */
+    width: fit-content;
+}
+
+.overview-board-selector ul > li {
+    background-color: rgba(0, 0, 0, 0.035);
+    border-radius: 9px;
+    padding: 0.65rem 1rem;
+    user-select: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.85); */
+}
+
+.overview-board-selector ul > li:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.overview-board-selector > ul > li.board-selected {
+    background-color: #d3f36b;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.overview-board-selector > ul > li.board-selected:hover {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: #dfeeae;
 }
